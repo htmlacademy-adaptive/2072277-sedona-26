@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/menu-logo.svg" width="185" height="96" alt="Логотип сайта «Седона».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <img class="text-index" src="img/text-index.svg" width="282" height="214" alt="Приветственный текст">
+        <h1>Седона — небольшой <br>городок в Аризоне, <br>заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, <br>по которым Седона круче, чем Гранд-Каньон</p>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Преимущества "Седоны"</h2>
+          <div class="advantages__list">
+            <div class="advantages__item">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__discription">— №1 —</p>
+              <p class="advantages__discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="image-first" src="img/photo-city.jpg" width="320" height="260" alt="Вид на город Седона">
+          </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        </div>
+
+      </section>
+
+
+    </main>
+
 
   </body>
 </html>
