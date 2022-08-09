@@ -34,58 +34,64 @@
     <main class="main-container">
       <section class="intro-index">
         <img class="intro-index__logo" src="img/index/sedona-logo-index.svg" width="282" height="214" alt="Приветственный текст">
-        <h1>Седона — небольшой <br>городок в Аризоне, <br>заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, <br>по которым Седона круче, чем Гранд-Каньон</p>
+        <h1 class="intro-index__title">Седона — небольшой <br>городок в Аризоне, <br>заслуживающий большего!</h1>
+        <p class="intro-index__text">Рассмотрим 5 причин, <br>по которым Седона круче, чем Гранд-Каньон</p>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества "Седоны"</h2>
-          <ul class="advantages__list-content">
-            <li class="advantages__item">
-              <h3 class="advantages__title-white">Настоящий городок</h3>
-              <p class="advantages__discription-white">— №1 —</p>
-              <p class="advantages__discription-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="image__first" src="img/index/photo-city.jpg" width="320" height="260" alt="Вид на город «Седона».">
-              <ul class="advantages__list-content-additional">
-                <li class="advantages__item-additional advantages__item--house">
-                  <h3 class="advantages__title-additional">Жилье</h3>
-                  <p class="advantages__discription-additional">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item--color">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__subtitle">— №1 —</p>
+              <p class="advantages__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img class="advantages__image" src="img/index/photo-city.jpg" width="320" height="260" alt="Вид на город «Седона».">
+              <ul class="advantages__list additional-list">
+                <li class="additional-list__item">
+                  <h3 class="additional-list__title">Жилье</h3>
+                  <p class="additional-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="advantages__item-additional advantages__item--food">
-                  <h3 class="advantages__title-additional">Еда</h3>
-                  <p class="advantages__discription-additional">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <li class="additional-list__item">
+                  <h3 class="additional-list__title">Еда</h3>
+                  <p class="additional-list__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="advantages__item-additional advantages__item--souvenirs">
-                  <h3 class="advantages__title-additional">Сувениры</h3>
-                  <p class="advantages__discription-additional">Не только китайского, но и настоящего местного производства!</p>
+                <li class="additional-list__item">
+                  <h3 class="additional-list__title">Сувениры</h3>
+                  <p class="additional-list__description">Не только китайского, но и настоящего местного производства!</p>
                 </li>
               </ul>
             </li>
+            <li class="advantages__item--color">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <p class="advantages__subtitle">— №2 —</p>
+              <p class="advantages__desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="advantages__image" src="img/index/photo-bridge.jpg" width="320" height="260" alt="Вид на «Мост дьявола».">
+            </li>
             <li class="advantages__item">
-              <h3 class="advantages__title-white">Там есть мост дьявола</h3>
-              <p class="advantages__discription-white">— №2 —</p>
-              <p class="advantages__discription-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="image__fsecond" src="img/index/photo-bridge.jpg" width="320" height="260" alt="Вид на «Мост дьявола».">
-              <h3 class="advantages__ftitle">Небольшая площадь</h3>
-              <p class="advantages__fdiscription">— №3 —</p>
-              <p class="advantages__fdiscription">Все достопримечательности находятся очень близко</p>
-              <h3 class="advantages__ftitle">Красивая дорога</h3>
-              <p class="advantages__fdiscription">— №4 —</p>
-              <p class="advantages__fdiscription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              <h3 class="advantages__ftitle">Мало туристов</h3>
-              <p class="advantages__fdiscription">— №5 —</p>
-              <p class="advantages__fdiscription">Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="advantages__caption">Небольшая площадь</h3>
+              <p class="advantages__lead">— №3 —</p>
+              <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__caption">Красивая дорога</h3>
+              <p class="advantages__lead">— №4 —</p>
+              <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__caption">Мало туристов</h3>
+              <p class="advantages__lead">— №5 —</p>
+              <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="hotel__search">
+      <section class="hotel">
         <h3 class="hotel__search-title">Заинтересовались?</h3>
-        <p class="hotel__search-discription">Укажите предполагаемые даты <br>поездки, и мы покажем вам лучшие <br>предложения гостиниц в Седоне</p>
-        <a class="hotel__search-button button" href="#">Поиск гостиницы в Седоне</a>
+        <p class="hotel__search-description">Укажите предполагаемые даты <br>поездки, и мы покажем вам лучшие <br>предложения гостиниц в Седоне</p>
+        <a class="hotel__search-link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <div class="map__wrapper">
-        <img class="map" src="img/index/map-mobile.jpg" width="320" height="350" alt="Карта расположения города «Седона».">
+      <div class="map">
+        <img class="map__image" src="img/index/map-mobile.jpg" width="320" height="350" alt="Карта расположения города «Седона».">
       </div>
     </main>
     <footer class="main-footer">
@@ -129,17 +135,17 @@
       </div>
     </footer>
 
-    <section class="modal__container">
+    <section class="modal">
       <div class="modal__content">
-        <h3 class="modal__container-title">Что-то пошло не так!</h3>
-        <p class="modal__container-text">Проверьте поля, выделенные <br>красным, скорее всего вы <br>забыли их заполнить</p>
-        <button class="modal__container-button button">Ок</button>
+        <h3 class="modal__title">Что-то пошло не так!</h3>
+        <p class="modal__text">Проверьте поля, выделенные <br>красным, скорее всего вы <br>забыли их заполнить</p>
+        <button class="modal__button button type="button">Ок</button>
       </div>
     </section>
-    <section class="modal__container">
+    <section class="modal">
       <div class="modal__content">
-        <h3 class="modal__container-title">Ваш отзыв отправлен!</h3>
-        <p class="modal__container-text">Спасибо за ваше участие, ваш <br>отзыв уже поступил к нам. <br>В ближайшее время мы <br>опубликуем его на сайте.</p>
+        <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+        <p class="modal__text">Спасибо за ваше участие, ваш <br>отзыв уже поступил к нам. <br>В ближайшее время мы <br>опубликуем его на сайте.</p>
         <button class="modal__container-button button">Ок</button>
       </div>
     </section>
