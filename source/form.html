@@ -45,23 +45,23 @@
               <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Петр" required>
             </p>
             <p class="order-form__item">
-              <label class="order-form__label" for="user-name">Фамилия*:</label>
-              <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Пустота" required>
+              <label class="order-form__label" for="surname">Фамилия*:</label>
+              <input class="order-form__input" type="text" name="user" id="surname" placeholder="Пустота" required>
             </p>
             <p class="order-form__item">
               <label class="order-form__label" for="user-patronymic">Отчество*:</label>
-              <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович" required>
+              <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович">
             </p>
         </fieldset>
         <fieldset class="order-form__group">
           <legend class="order-form__title">Контактная информация:</legend>
             <p class="order-form__item">
-              <label class="order-form__label" for="user-phone" name="user-phone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон">Контактный телефон*:</label>
-              <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Введите телефон" required>
+              <label class="order-form__label" for="telephone">Контактный телефон*:</label>
+              <input class="order-form__input" type="tel" name="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
             </p>
             <p class="order-form__item">
               <label class="order-form__label" for="user-email">Электронная почта*:</label>
-              <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Введите e-mail" required>
+              <input class="order-form__input" type="text" name="user" id="user-email" placeholder="Введите e-mail" required>
             </p>
         </fieldset>
         <fieldset class="order-form__group">
@@ -69,20 +69,20 @@
           <ul class="order-form__list-radio">
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden control-radio__input" type="radio" name="control-radio" value="1" checked>
-                <span class="control-radio__label">Скорее положительное</span>
+                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="1" checked>
+                <span class="order-form__radio-label">Скорее положительное</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden control-radio__input" type="radio" name="control-radio" value="2">
-                <span class="control-radio__label">Скорее отрицательное</span>
+                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="2">
+                <span class="order-form__radio-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden control-radio__input" type="radio" name="control-radio" value="3">
-                <span class="control-radio__label">Затрудняюсь ответить</span>
+                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="3">
+                <span class="order-form__radio-label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -92,26 +92,26 @@
           <ul class="order-form__list-checkbox">
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden control-checkbox__input" type="checkbox" name="control-checkbox" value="1" checked>
-                <span class="control-checkbox__label">Мост дьявола</span>
+                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
+                <span class="order-form__checkbox-label">Мост дьявола</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden control-checkbox__input" type="checkbox" name="control-checkbox" value="2" checked>
-                <span class="control-checkbox__label">Гора-Колокол</span>
+                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
+                <span class="order-form__checkbox-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden control-checkbox__input" type="checkbox" name="control-checkbox" value="3" checked>
-                <span class="control-checkbox__label">Слайд-парк</span>
+                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
+                <span class="order-form__checkbox-label">Слайд-парк</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden control-checkbox__input" type="checkbox" name="control-checkbox" value="4">
-                <span class="control-checkbox__label">Красные скалы</span>
+                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
+                <span class="order-form__checkbox-label">Красные скалы</span>
               </label>
             </li>
           </ul>
