@@ -15,14 +15,17 @@
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  color: #81B3D2;
+}
 
-  &:hover {
-    color: rgba(129, 179, 210, 6);
-  }
-  &:active {
-    color: rgba(129, 179, 210, 3);
-  }
+.main-nav__toggle svg {
+  fill: #81B3D2;
+}
+
+.main-nav__toggle:hover svg {
+  fill: rgba(129, 179, 210, 60%);
+}
+.main-nav__toggle:active svg {
+  fill: rgba(129, 179, 210, 30%);
 }
 
 .main-nav__list {

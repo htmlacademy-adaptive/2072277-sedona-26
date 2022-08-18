@@ -4,6 +4,8 @@
   font-weight: 700;
   text-transform: uppercase;
   // text-align: center;
+  margin: 0;
+  margin-top: 29px;
 }
 
 .social {
@@ -13,18 +15,29 @@
 
 .main-footer__copyright {
   display: flex;
+
+  &:hover {
+    color: #81B3D2;
+  }
+  &:active {
+    color: #B3B3B3;
+  }
+  &:hover svg {
+    fill: #81B3D2;
+  }
+  &:active svg {
+    fill: #B3B3B3;
+  }
 }
 
 .copyright__text {
-
-}
-
-.copyright__link:hover svg {
-  fill: #81B3D2;
-}
-
-.copyright__link:active svg {
-  fill: #B3B3B3;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding-right: 13px;
+  cursor: pointer;
 }
 
 .copyright__htmlacademy-logo {
