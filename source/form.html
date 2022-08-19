@@ -5,17 +5,17 @@
     <title>Форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body-form">
+  <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img src="img/header/menu-logo.svg" width="185" height="96" alt="Логотип сайта «Седона».">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z"/>
+            <path d="M22.9 9H0V13H22.9V9Z"/>
+            <path d="M22.9 18H0V22H22.9V18Z"/>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -37,11 +37,13 @@
         </div>
       </nav>
     </header>
-    <main class="form-container">
-      <section class="form-container__header">
+    <main class="main-container">
+      <div class="main-container__background">
         <img class="form-container__picture" src="img/catalog/sedona-logo-catalog.svg" width="229" height="39" alt="Седона">
-        <h1 class="form-container__title">Оставьте свой отзыв</h1>
-        <p class="form-container__text">Помогите нашим отелям стать лучше! <br>оставьте отзыв о них, а также о <br>посещенных вами <br>достопримечательностях</p>
+      </div>
+      <section class="intro-form">
+        <h1 class="intro-form__title">Оставьте свой отзыв</h1>
+        <p class="intro-form__text">Помогите нашим отелям стать лучше! <br>оставьте отзыв о них, а также о <br>посещенных вами <br>достопримечательностях</p>
       </section>
       <form class="form-container__field-group order-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__group">
@@ -75,19 +77,19 @@
           <ul class="order-form__list-radio">
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="1" checked>
+                <input class="order-form__radio-input" type="radio" name="control-radio" value="1" checked>
                 <span class="order-form__radio-label">Скорее положительное</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="2">
+                <input class="order-form__radio-input" type="radio" name="control-radio" value="2">
                 <span class="order-form__radio-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__radio">
-                <input class="visually-hidden order-form__radio-input" type="radio" name="control-radio" value="3">
+                <input class="order-form__radio-input" type="radio" name="control-radio" value="3">
                 <span class="order-form__radio-label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -98,25 +100,25 @@
           <ul class="order-form__list-checkbox">
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
+                <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
                 <span class="order-form__checkbox-label">Мост дьявола</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
+                <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
                 <span class="order-form__checkbox-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
+                <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
                 <span class="order-form__checkbox-label">Слайд-парк</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__checkbox">
-                <input class="visually-hidden order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
+                <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
                 <span class="order-form__checkbox-label">Красные скалы</span>
               </label>
             </li>
