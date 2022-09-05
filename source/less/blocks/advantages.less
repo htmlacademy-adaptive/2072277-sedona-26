@@ -135,12 +135,20 @@
 .advantages__item--color {
   background-color: #eeeeee;
 
+  .advantages__title {
+    @media (min-width: @tablet-width) {
+      margin-top: 43px;
+    }
+  }
+
   @media (min-width: @mobile-width-only) {
     min-width: 320px;
     height: 168px;
 
     // .advantages__text-area {
-    //   padding: 26px 26px 49px 26px;
+    //   padding-top: 24px;
+    //   padding-left: 26px;
+    //   padding-right: 26px;
     // }
   }
 
@@ -150,18 +158,20 @@
     min-width: 256px;
     height: 256px;
 
-    .advantages__text-area {
-      padding-top: 42px;
-    }
+    // .advantages__text-area {
+    //   padding-top: 45px;
+    //   padding-left: 45px;
+    //   padding-right: 45px;
+    // }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
     height: 256px;
 
-    .advantages__text-area {
-      padding-top: 42px;
-    }
+    // .advantages__text-area {
+    //   padding-top: 42px;
+    // }
   }
 
   .advantages__subtitle {
