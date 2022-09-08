@@ -1,10 +1,88 @@
+.picture-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+  }
+}
+
 .picture-list__item {
   margin: 0;
-  margin-top: 24px;
+
+  &--main-point {
+    @media (min-width: @tablet-width) {
+      min-width: 648px;
+      margin: 0;
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 1200px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+  }
 }
 
 .picture-list__link {
   text-decoration: none;
+}
+
+.picture-list__image {
+  background-color: #ffffff;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+  }
+
+  &--general {
+    @media (min-width: @tablet-width) {
+      min-width: 648px;
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 1200px;
+    }
+  }
+}
+
+.picture-list__info-area {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    // flex-direction: row;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   background-color: rgba(0, 0, 0, 30%);
+  //   flex-direction: row;
+  // }
 }
 
 .picture-list__title {
@@ -13,7 +91,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 15px;
+  margin-bottom: 11px;
 }
 
 .picture-list__description {
@@ -22,12 +100,11 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  margin-top: 11px;
+  margin-bottom: 11px;
 }
 
 .picture-list__rating {
   display: flex;
-  margin-top: 11px;
 }
 
 .picture-list__amount {
@@ -35,6 +112,7 @@
   line-height: 21px;
   font-weight: 700;
   margin: 0;
+  padding-left: 14px;
 }
 
 .picture-list__rating-button {
@@ -43,9 +121,5 @@
   background-color: transparent;
   cursor: pointer;
   margin: 0;
-}
-
-.picture-list__image {
-  background-color: #ffffff;
-  margin: 0;
+  padding: 0;
 }
