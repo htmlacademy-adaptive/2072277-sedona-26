@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     padding-top: 67px;
   }
 
@@ -47,10 +47,12 @@
 .picture-list__image {
   background-color: #ffffff;
   margin: 0;
+  padding-top: 50px;
 
   @media (min-width: @tablet-width) {
     min-width: 324px;
     width: 100%;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -58,6 +60,8 @@
   }
 
   &--general {
+    padding-top: 0;
+
     @media (min-width: @tablet-width) {
       min-width: 648px;
       width: 100%;
@@ -70,19 +74,41 @@
 }
 
 .picture-list__info-area {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 25px;
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
-    // flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
   }
 
-  // @media (min-width: @desktop-width) {
-  //   background-color: rgba(0, 0, 0, 30%);
-  //   flex-direction: row;
-  // }
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 30%);
+    margin-top: -97px;
+  }
+}
+
+.picture-list__info-area::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #e5e5e5;
+  min-width: 320px;
+  bottom: -25px;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.picture-list__text-area {
+  display: flex;
+  flex-direction: column;
 }
 
 .picture-list__title {
@@ -92,6 +118,10 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .picture-list__description {
@@ -101,18 +131,42 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .picture-list__rating {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .picture-list__amount {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   margin: 0;
-  padding-left: 14px;
+  margin-left: 14px;
+  padding-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .picture-list__rating-button {
@@ -122,4 +176,9 @@
   cursor: pointer;
   margin: 0;
   padding: 0;
+  fill: rgba(0, 0, 0, 30%);
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+  }
 }

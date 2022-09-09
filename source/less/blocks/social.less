@@ -14,10 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  background-color: #81b3d2;
-  width: 48px;
-  height: 48px;
   margin-right: 6px;
   cursor: pointer;
 }
@@ -27,12 +23,20 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-sizing: border-box;
+  background-color: #81b3d2;
+  width: 48px;
+  height: 48px;
 
-  &:hover svg {
-    fill: #81b3d2;
+  &:active path {
+    fill: rgba(255, 255, 255, 30%);
   }
 
-  &:active svg {
-    fill: #b3b3b3;
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
   }
 }

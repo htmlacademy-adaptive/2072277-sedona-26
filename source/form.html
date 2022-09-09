@@ -45,35 +45,37 @@
         </div>
         <section class="intro-form">
           <h1 class="intro-form__title">Оставьте свой отзыв</h1>
-          <p class="intro-form__text">Помогите нашим отелям стать лучше! <br>оставьте отзыв о них, а также о <br>посещенных вами <br>достопримечательностях</p>
+          <p class="intro-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="form-container__field-group order-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="order-form__group">
-            <legend class="order-form__title">Представьтесь:</legend>
-              <p class="order-form__item">
-                <label class="order-form__label" for="user-name">Имя*:</label>
-                <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Петр" required>
-              </p>
-              <p class="order-form__item">
-                <label class="order-form__label" for="surname">Фамилия*:</label>
-                <input class="order-form__input" type="text" name="user" id="surname" placeholder="Пустота" required>
-              </p>
-              <p class="order-form__item">
-                <label class="order-form__label" for="user-patronymic">Отчество*:</label>
-                <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович">
-              </p>
-          </fieldset>
-          <fieldset class="order-form__group">
-            <legend class="order-form__title">Контактная информация:</legend>
-              <p class="order-form__item">
-                <label class="order-form__label" for="telephone">Контактный телефон*:</label>
-                <input class="order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
-              </p>
-              <p class="order-form__item">
-                <label class="order-form__label" for="user-email">Электронная почта*:</label>
-                <input class="order-form__input-contacts" type="text" name="user" id="user-email" placeholder="Введите e-mail" required>
-              </p>
-          </fieldset>
+          <div class="form-container__user-info">
+            <fieldset class="order-form__group">
+              <legend class="order-form__title">Представьтесь:</legend>
+                <p class="order-form__item">
+                  <label class="order-form__label" for="user-name">Имя*:</label>
+                  <input class="order-form__input" type="text" name="user" id="user-name" placeholder="Петр" required>
+                </p>
+                <p class="order-form__item">
+                  <label class="order-form__label" for="surname">Фамилия*:</label>
+                  <input class="order-form__input" type="text" name="user" id="surname" placeholder="Пустота" required>
+                </p>
+                <p class="order-form__item">
+                  <label class="order-form__label" for="user-patronymic">Отчество*:</label>
+                  <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович">
+                </p>
+            </fieldset>
+            <fieldset class="order-form__group">
+              <legend class="order-form__title">Контактная информация:</legend>
+                <p class="order-form__item">
+                  <label class="order-form__label" for="telephone">Контактный телефон*:</label>
+                  <input class="order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
+                </p>
+                <p class="order-form__item">
+                  <label class="order-form__label" for="user-email">Электронная почта*:</label>
+                  <input class="order-form__input-contacts" type="text" name="user" id="user-email" placeholder="Введите e-mail" required>
+                </p>
+            </fieldset>
+          </div>
           <fieldset class="order-form__group">
             <legend class="order-form__title">Ваше общее впечатление:</legend>
             <ul class="order-form__list-radio">
