@@ -48,7 +48,7 @@
           <p class="intro-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="form-container__field-group order-form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form-container__user-info">
+          <div class="order-form__user-info">
             <fieldset class="order-form__group">
               <legend class="order-form__title">Представьтесь:</legend>
                 <p class="order-form__item">
@@ -76,63 +76,69 @@
                 </p>
             </fieldset>
           </div>
-          <fieldset class="order-form__group">
-            <legend class="order-form__title">Ваше общее впечатление:</legend>
-            <ul class="order-form__list-radio">
-              <li class="order-form__item">
-                <label class="order-form__radio">
-                  <input class="order-form__radio-input" type="radio" name="control-radio" value="1" checked>
-                  <span class="order-form__radio-label">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__radio">
-                  <input class="order-form__radio-input" type="radio" name="control-radio" value="2">
-                  <span class="order-form__radio-label">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__radio">
-                  <input class="order-form__radio-input" type="radio" name="control-radio" value="3">
-                  <span class="order-form__radio-label">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="order-form__group">
-            <legend class="order-form__title">Посещенные достопримечательности:</legend>
-            <ul class="order-form__list-checkbox">
-              <li class="order-form__item">
-                <label class="order-form__checkbox">
-                  <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
-                  <span class="order-form__checkbox-label">Мост дьявола</span>
-                </label>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__checkbox">
-                  <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
-                  <span class="order-form__checkbox-label">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__checkbox">
-                  <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
-                  <span class="order-form__checkbox-label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__checkbox">
-                  <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
-                  <span class="order-form__checkbox-label">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="order-form__group">
+          <div class="order-form__user-feeling">
+            <fieldset class="order-form__group">
+              <legend class="order-form__title">Ваше общее впечатление:</legend>
+              <ul class="order-form__list-radio">
+                <li class="order-form__item">
+                  <label class="order-form__radio">
+                    <input class="order-form__radio-input" type="radio" name="control-radio" value="1" checked>
+                    <span class="order-form__radio-label">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__radio">
+                    <input class="order-form__radio-input" type="radio" name="control-radio" value="2">
+                    <span class="order-form__radio-label">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__radio">
+                    <input class="order-form__radio-input" type="radio" name="control-radio" value="3">
+                    <span class="order-form__radio-label">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="order-form__user-attractions">
+            <fieldset class="order-form__group">
+              <legend class="order-form__title">Посещенные достопримечательности:</legend>
+              <ul class="order-form__list-checkbox">
+                <li class="order-form__item">
+                  <label class="order-form__checkbox">
+                    <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
+                    <span class="order-form__checkbox-label">Мост дьявола</span>
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__checkbox">
+                    <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
+                    <span class="order-form__checkbox-label">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__checkbox">
+                    <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
+                    <span class="order-form__checkbox-label">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__checkbox">
+                    <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
+                    <span class="order-form__checkbox-label">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="order-form__text-group">
             <legend class="order-form__title">Опишите свои эмоции:</legend>
             <textarea class="order-form__text-area" id="user-message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-            <button class="order-form__submit button" type="submit">Отправить отзыв</button>
-            <span class="order-form__note"><sup>*</sup>—обязательные поля</span>
+            <div class="order-form__button-area">
+              <button class="order-form__submit button" type="submit">Отправить отзыв</button>
+              <span class="order-form__note"><sup>*</sup>—обязательные поля</span>
+            </div>
           </fieldset>
         </form>
       </main>
