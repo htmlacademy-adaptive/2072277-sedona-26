@@ -1,11 +1,31 @@
-.copyright__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+.copyright__link {
+  display: flex;
+  color: #000000;
+  text-decoration: none;
   text-transform: uppercase;
-  margin: 0;
-  padding-right: 13px;
   cursor: pointer;
+  margin: 0;
+
+  &:hover svg {
+    fill: #81b3d2;
+  }
+
+  &:active svg {
+    fill: #b3b3b3;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__text {
+  margin-right: 13px;
+  margin-top: 7px;
 }
 
 .copyright__htmlacademy-logo {
@@ -13,5 +33,4 @@
   width: 27px;
   height: 35px;
   margin-left: auto;
-  margin-bottom: 23px;
 }
