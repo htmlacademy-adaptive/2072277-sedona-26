@@ -4,14 +4,26 @@
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 10px;
+  background-image: url("../img/index/map-mobile.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 320px;
+  min-height: 350px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
 .map__image {
-  background-color: #ffffff;
+  display: block;
+  border: none;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 768px;
