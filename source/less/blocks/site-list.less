@@ -4,7 +4,6 @@
 }
 
 .site-list__link {
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -15,6 +14,10 @@
   // filter: drop-shadow(0 0 1px rgba(1, 1, 1, 0.2));
   // border-top: 1px solid #ffffff;
   // border-bottom: 1px solid #ffffff;
+
+  @media (min-width: @mobile-width-only) {
+    color: #ffffff;
+  }
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -34,8 +37,11 @@
 
 .site-list__item {
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @media (min-width: @mobile-width-only) {
+    justify-content: center;
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 153px;
