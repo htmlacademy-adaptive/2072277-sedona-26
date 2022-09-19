@@ -3,10 +3,16 @@
 //   width: auto;
 //   min-height: 223px;
 //   background-color: #81b3d2;
+
+//   .site-list__link {
+//     color: #ffffff;
+//   }
 // }
 
 .main-nav__toggle {
   position: absolute;
+  top: -25px;
+  left: -25px;
   right: 0;
   border: none;
   outline: none;
@@ -18,106 +24,127 @@
   margin-right: 20px;
   fill: #81b3d2;
 
-  &:hover {
-    fill: rgba(129, 179, 210, 60%);
+  // &:hover {
+  //   fill: rgba(129, 179, 210, 60%);
+  // }
+
+  // &:active {
+  //   fill: rgba(129, 179, 210, 30%);
+  // }
+
+  // @media (min-width: @tablet-width) {
+  //   display: none;
+  // }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
   }
 
-  &:active {
-    fill: rgba(129, 179, 210, 30%);
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -5px;
+    z-index: 10;
+    min-height: 223px;
+    background-color: #81b3d2;
   }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 320px;
+    height: 7px;
+    box-shadow: inset 4px 0 8px -3px fade(#000000, 40%);
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 277px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-// .main-nav--closed .main-nav__toggle::before {
-//   content: "";
-//   position: absolute;
-//   top: 15px;
-//   left: 17px;
-//   width: 36px;
-//   height: 2px;
-//   background-color: #ffffff;
-//   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-// }
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: fade(#81b3d2, 60%);
+  box-shadow:
+    0 8px 0 0 fade(#81b3d2, 60%),
+    0 16px 0 0 fade(#81b3d2, 60%);
+}
 
-// .main-nav--closed .main-nav__toggle:active::before {
-//   background-color: fade(#ffffff, 30%);
-//   box-shadow:
-//     0 8px 0 0 fade(#ffffff, 30%),
-//     0 16px 0 0 fade(#ffffff, 30%);
-// }
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#81b3d2, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#81b3d2, 30%),
+    0 16px 0 0 fade(#81b3d2, 30%);
+}
 
-// .main-nav--opened .main-nav__toggle {
-//   top: 0;
-//   right: 0;
+// закрывающий крестик
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
 
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 10px;
-//     right: 0;
-//     width: 28px;
-//     height: 4px;
-//     background-color: #ffffff;
-//   }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
 
-//   &::before { //закрывающий крестик
-//     transform: rotate(45deg);
-//     box-shadow: none;
-//   }
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
-//   &::after {
-//     transform: rotate(-45deg);
-//   }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-//   &:hover::before,
-//   &:hover::after {
-//     background-color: fade(#ffffff, 60%);
-//   }
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-//   &:active::before,
-//   &:active::after {
-//     background-color: fade(#ffffff, 30%);
-//   }
-// }
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
 
-// @media (max-width: @mobile-width-only) {
-//   .main-nav--opened .main-nav__left-list {
-//     display: none;
-//   }
-
-//   .main-nav--opened .main-nav__right-list {
-//     display: none;
-//   }
-
-//   .main-nav--opened .main-nav__wrapper {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     left: 70px;
-//     z-index: 10;
-//     min-height: 80vh;
-//     background-color: #81B3D2;
-//   }
-
-//   .main-nav--opened .main-nav__wrapper::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 0;
-//     width: 7px;
-//     height: 100%;
-//     box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
-//   }
-
-//   .main-nav--nojs {
-//     display: none;
-//   }
-// }
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
 
 .main-nav__wrapper {
   display: flex;
