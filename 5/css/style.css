@@ -235,6 +235,7 @@
 @media (min-width: 768px) {
   .advantages__text-area {
     padding: 40px 32px 44px 32px;
+    align-self: center;
   }
 }
 @media (min-width: 1200px) {
@@ -322,10 +323,7 @@
 .advantages__item--color {
   position: relative;
   background-color: #eeeeee;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 24px;
 }
 .advantages__item--color:last-child {
   padding-bottom: 26px;
@@ -342,8 +340,8 @@
     justify-content: space-between;
     width: 33.33%;
     flex-grow: 1;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -392,107 +390,169 @@
   padding: 0;
   padding-top: 23px;
   padding-bottom: 52px;
-  padding-right: 18px;
-  padding-left: 18px;
-}
-.additional-list .additional-list__title {
-  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .additional-list {
     flex-direction: row;
-    flex-wrap: wrap;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
   }
 }
 .additional-list__item {
+  display: flex;
   flex-direction: column;
 }
 .additional-list__item--house {
-  padding: 8px 27px 22px 47px;
+  padding: 15px 42px 22px 65px;
+}
+@media (min-width: 768px) {
+  .additional-list__item--house {
+    width: 33.33%;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 158px;
+    padding-bottom: 59px;
+    padding-right: 30px;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .additional-list__item--house {
+    padding-bottom: 59px;
+    padding-right: 40px;
+    padding-left: 35px;
+  }
+}
+.additional-list__item--house .additional-list__title {
+  position: relative;
+}
+.additional-list__item--house .additional-list__title::before {
+  position: absolute;
   content: "";
-  display: flex;
-  flex-shrink: 0;
   background-image: url("../img/index/house_mobile-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  width: 39px;
+  height: 37px;
+  left: -45px;
+  top: -8px;
 }
 @media (min-width: 768px) {
-  .additional-list__item--house {
-    padding: 158px 73px 59px 36px;
-    content: "";
-    flex-shrink: 0;
+  .additional-list__item--house .additional-list__title::before {
     background-image: url("../img/index/house_tablet-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 210px 55px;
+    width: 75px;
+    height: 72px;
+    left: 70px;
+    top: -85px;
   }
 }
 @media (min-width: 1200px) {
-  .additional-list__item--house {
-    padding: 159px 104px 79px 58px;
-    content: "";
-    flex-shrink: 0;
+  .additional-list__item--house .additional-list__title::before {
     background-image: url("../img/index/house_desktop-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 230px 55px;
+    width: 75px;
+    height: 72px;
+    left: 137px;
+    top: -85px;
   }
 }
 .additional-list__item--food {
-  padding: 8px 0 22px 52px;
+  padding: 8px 18px 22px 70px;
+}
+@media (min-width: 768px) {
+  .additional-list__item--food {
+    width: 33.33%;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 158px;
+    padding-bottom: 59px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .additional-list__item--food {
+    padding-bottom: 59px;
+    padding-right: 40px;
+  }
+}
+.additional-list__item--food .additional-list__title {
+  position: relative;
+}
+.additional-list__item--food .additional-list__title::before {
+  position: absolute;
   content: "";
-  display: flex;
-  flex-shrink: 0;
   background-image: url("../img/index/food_mobile-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  width: 40px;
+  height: 40px;
+  left: -50px;
+  top: -10px;
 }
 @media (min-width: 768px) {
-  .additional-list__item--food {
-    padding: 158px 70px 59px 0;
-    content: "";
-    flex-shrink: 0;
+  .additional-list__item--food .additional-list__title::before {
     background-image: url("../img/index/food_tablet-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 213px 60px;
+    width: 76px;
+    height: 68px;
+    left: 69px;
+    top: -85px;
   }
 }
 @media (min-width: 1200px) {
-  .additional-list__item--food {
-    padding: 157px 121px 80px 0;
-    content: "";
-    flex-shrink: 0;
+  .additional-list__item--food .additional-list__title::before {
     background-image: url("../img/index/food_desktop-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 213px 60px;
+    width: 77px;
+    height: 69px;
+    left: 135px;
+    top: -85px;
   }
 }
 .additional-list__item--souvenirs {
-  padding: 8px 38px 0 44px;
-  content: "";
-  display: flex;
-  flex-shrink: 0;
-  background-image: url("../img/index/souvenirs_mobile-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 5px 0;
+  padding: 8px 56px 0 62px;
 }
 @media (min-width: 768px) {
   .additional-list__item--souvenirs {
-    padding: 158px 31px 81px 0;
-    flex-shrink: 0;
-    background-image: url("../img/index/souvenirs_tablet-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 205px 60px;
+    width: 33.33%;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 158px;
+    padding-bottom: 59px;
+    padding-right: 30px;
   }
 }
 @media (min-width: 1200px) {
   .additional-list__item--souvenirs {
-    padding: 158px 78px 80px 0;
-    content: "";
-    flex-shrink: 0;
+    padding-right: 35px;
+  }
+}
+.additional-list__item--souvenirs .additional-list__title {
+  position: relative;
+}
+.additional-list__item--souvenirs .additional-list__title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/index/souvenirs_mobile-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 32px;
+  height: 38px;
+  left: -37px;
+  top: -8px;
+}
+@media (min-width: 768px) {
+  .additional-list__item--souvenirs .additional-list__title::before {
+    background-image: url("../img/index/souvenirs_tablet-icon.svg");
+    width: 64px;
+    height: 76px;
+    left: 79px;
+    top: -85px;
+  }
+}
+@media (min-width: 1200px) {
+  .additional-list__item--souvenirs .additional-list__title::before {
     background-image: url("../img/index/souvenirs_desktop-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 205px 60px;
+    width: 63px;
+    height: 76px;
+    left: 145px;
+    top: -85px;
   }
 }
 .additional-list__title {
@@ -503,6 +563,7 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .additional-list__title {
