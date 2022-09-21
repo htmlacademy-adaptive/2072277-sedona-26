@@ -15,11 +15,11 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.9 0H0V4H22.9V0Z"/>
               <path d="M22.9 9H0V13H22.9V9Z"/>
               <path d="M22.9 18H0V22H22.9V18Z"/>
-            </svg>
+            </svg> -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
@@ -35,7 +35,7 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--last">
                 <a class="site-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
@@ -54,7 +54,11 @@
             <ul class="gallery__list picture-list">
               <li class="picture-list__item picture-list__item--main-point">
                 <a class="picture-list__link" href="#">
-                  <img class="picture-list__image picture-list__image--general" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Фотография дороги и красивого заката">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                    <img class="picture-list__image picture-list__image--general" src="img/catalog/photo-1-mobile@1x.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg" width="280" height="280" alt="Фотография дороги и красивого заката">
+                  </picture>
                 </a>
                 <div class="picture-list__info-area">
                   <div class="picture-list__text-area">
@@ -74,7 +78,11 @@
               </li>
               <li class="picture-list__item">
                 <a class="picture-list__link" href="#">
-                  <img class="picture-list__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Фотография кактуса">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                    <img class="picture-list__image" src="img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg" width="280" height="280" alt="Фотография кактуса">
+                  </picture>
                 </a>
                 <div class="picture-list__info-area">
                   <div class="picture-list__text-area">
@@ -94,7 +102,11 @@
               </li>
               <li class="picture-list__item">
                 <a class="picture-list__link" href="#">
-                  <img class="picture-list__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Фотография горной дороги">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                    <img class="picture-list__image" src="img/catalog/photo-3-mobile@1x.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg" width="280" height="280" alt="Фотография горной дороги">
+                  </picture>
                 </a>
                 <div class="picture-list__info-area picture-list__info-area--color">
                   <div class="picture-list__text-area">
@@ -114,7 +126,11 @@
               </li>
               <li class="picture-list__item">
                 <a class="picture-list__link" href="#">
-                  <img class="picture-list__image" src="img/catalog/photo-4-desktop.jpg" width="280" height="280" alt="Фотография горного перевала «Мост дьявола»">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop@1x.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet@1x.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+                    <img class="picture-list__image" src="img/catalog/photo-4-mobile@1x.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg" width="280" height="280" alt="Фотография горного перевала «Мост дьявола»">
+                  </picture>
                 </a>
                 <div class="picture-list__info-area">
                   <div class="picture-list__text-area">

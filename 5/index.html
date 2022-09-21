@@ -35,7 +35,7 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--last">
                 <a class="site-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
@@ -61,7 +61,11 @@
                     <p class="advantages__subtitle">— №1 —</p>
                     <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   </div>
-                  <img class="advantages__image" src="img/index/photo-city.jpg" width="320" height="260" alt="Вид на город «Седона».">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-city@1x-desktop.jpg 1x, img/index/photo-city@2x-desktop.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-city@1x-tablet.jpg 1x, img/index/photo-city@2x-tablet.jpg 2x">
+                    <img class="advantages__image" src="img/index/photo-city@1x-mobile.jpg" srcset="img/index/photo-city@2x-mobile.jpg" width="320" height="260" alt="Вид на город «Седона».">
+                  </picture>
                 </div>
                 <ul class="additional-list">
                   <li class="additional-list__item additional-list__item--house">
@@ -85,7 +89,11 @@
                     <p class="advantages__subtitle">— №2 —</p>
                     <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                   </div>
-                  <img class="advantages__image" src="img/index/photo-bridge.jpg" width="320" height="260" alt="Вид на «Мост дьявола».">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-bridge@1x-desktop.jpg 1x, img/index/photo-bridge@2x-desktop.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-bridge@1x-tablet.jpg 1x, img/index/photo-bridge@2x-tablet.jpg 2x">
+                    <img class="advantages__image" src="img/index/photo-bridge@1x-mobile.jpg" srcset="img/index/photo-bridge@2x-mobile.jpg" width="320" height="260" alt="Вид на «Мост дьявола».">
+                  </picture>
                 </div>
               </li>
               <li class="advantages__item advantages__item--color advantages__item--small-area">
