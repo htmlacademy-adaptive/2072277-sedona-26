@@ -9,7 +9,12 @@
 .main-header__logo {
   position: absolute;
   display: flex;
-  height: 96px;
+  height: 106px;
   left: 51%;
+  bottom: -10px;
   transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    bottom: -50px;
+  }
 }
