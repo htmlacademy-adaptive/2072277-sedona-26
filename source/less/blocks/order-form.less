@@ -183,13 +183,57 @@
 
 .order-form__radio {
   min-width: 280px;
-}
-
-.order-form__radio-label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  // padding-left: 1.2em;
+  margin-left: 55px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
+
+.order-form__radio-input {
+  position: absolute;
+  appearance: none;
+}
+
+.order-form__radio-label {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: -55px;
+  margin-top: -10px;
+}
+
+.order-form__radio-input:checked + .order-form__radio-label {
+  background-image: url("../img/form/radio-input_checked.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.order-form__radio-input:hover + .order-form__radio-label {
+  background-color: #e5e5e5;
+}
+
+.order-form__radio-input:disabled + .order-form__radio-label {
+  background-color: #d5d5d5;
+}
+
+.order-form__radio-input:focus + .order-form__radio-label {
+    box-shadow:
+      0 0 0 0.1em #000000,
+      0 0 0 0.2em #000000;
+}
+
 
 .order-form__user-attractions {
   padding-left: 20px;
