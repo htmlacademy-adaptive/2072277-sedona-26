@@ -51,7 +51,7 @@
         </section>
         <form class="main-container__field-group order-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="order-form__user-info">
-            <fieldset class="order-form__group">
+            <fieldset class="order-form__group order-form__group--name">
               <legend class="order-form__title">Представьтесь:</legend>
                 <p class="order-form__item">
                   <label class="order-form__label" for="user-name">Имя*:</label>
@@ -66,13 +66,13 @@
                   <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович">
                 </p>
             </fieldset>
-            <fieldset class="order-form__group">
+            <fieldset class="order-form__group order-form__group--phone">
               <legend class="order-form__title">Контактная информация:</legend>
-                <p class="order-form__item">
-                  <label class="order-form__label" for="telephone">Контактный телефон*:</label>
-                  <input class="order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
+                <p class="order-form__item order-form__item--phone-area">
+                  <label class="order-form__label order-form__label--phone-area" for="telephone">Контактный телефон*:</label>
+                  <input class="order-form__input-contacts order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
                 </p>
-                <p class="order-form__item">
+                <p class="order-form__item order-form__item--mail-area">
                   <label class="order-form__label" for="user-email">Электронная почта*:</label>
                   <input class="order-form__input-contacts" type="text" name="user" id="user-email" placeholder="Введите e-mail" required>
                 </p>
@@ -108,30 +108,34 @@
           </div>
           <div class="order-form__user-attractions">
             <fieldset class="order-form__group">
-              <legend class="order-form__title">Посещенные достопримечательности:</legend>
+              <legend class="order-form__title">Посещенные<br> достопримечательности:</legend>
               <ul class="order-form__list-checkbox">
                 <li class="order-form__item">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
-                    <span class="order-form__checkbox-label">Мост дьявола</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Мост дьявола
                   </label>
                 </li>
                 <li class="order-form__item">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
-                    <span class="order-form__checkbox-label">Гора-Колокол</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Гора-Колокол
                   </label>
                 </li>
                 <li class="order-form__item">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
-                    <span class="order-form__checkbox-label">Слайд-парк</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Слайд-парк
                   </label>
                 </li>
                 <li class="order-form__item">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
-                    <span class="order-form__checkbox-label">Красные скалы</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Красные скалы
                   </label>
                 </li>
               </ul>
