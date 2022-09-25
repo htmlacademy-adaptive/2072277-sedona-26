@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicons/favicon-32x32.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest.json">
   </head>
   <body class="page__body">
     <div class="container">
@@ -14,11 +18,6 @@
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <!-- <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.9 0H0V4H22.9V0Z"/>
-              <path d="M22.9 9H0V13H22.9V9Z"/>
-              <path d="M22.9 18H0V22H22.9V18Z"/>
-            </svg> -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
@@ -167,18 +166,18 @@
         </div>
       </footer>
       <section class="modal">
-        <div class="modal__content">
+        <div class="modal__error">
           <h3 class="modal__title">Что-то пошло не так!</h3>
-          <p class="modal__text">Проверьте поля, выделенные <br>красным, скорее всего вы <br>забыли их заполнить</p>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="modal__button button" type="button">Ок</button>
         </div>
       </section>
       <section class="modal">
-        <div class="modal__content">
+        <div class="modal__success">
           <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-          <p class="modal__text">Спасибо за ваше участие, ваш <br>отзыв уже поступил к нам. <br>В ближайшее время мы <br>опубликуем его на сайте.</p>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           <div class="modal__button-area">
-            <button class="modal__button button" type="button">Закрыть окно</button>
+            <button class="modal__close-button button" type="button">Закрыть окно</button>
           </div>
         </div>
       </section>

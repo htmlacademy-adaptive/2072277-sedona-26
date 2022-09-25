@@ -1,23 +1,6 @@
-* { outline: 1px solid red }
-
 .order-form {
   display: flex;
   flex-direction: column;
-
-  // @media (min-width: @mobile-width-only) {
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
-  // @media (min-width: @tablet-width) {
-  //   padding-left: 60px;
-  //   padding-right: 60px;
-  // }
-
-  // @media (min-width: @desktop-width) {
-  //   padding-left: 120px;
-  //   padding-right: 120px;
-  // }
 }
 
 .order-form__user-info {
@@ -30,7 +13,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    gap: 87px;
     justify-items: center;
     align-items: flex-start;
     justify-content: center;
@@ -58,7 +40,7 @@
     border-bottom: 1px solid #e5e5e5;
     min-width: 320px;
     width: 100%;
-    top: -80px;
+    top: -75px;
     left: -10px;
 
     @media (min-width: @tablet-width) {
@@ -84,7 +66,7 @@
     margin-bottom: 64px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 0;
+
     }
 
     &::before {
@@ -93,7 +75,7 @@
       border-bottom: 1px solid #e5e5e5;
       min-width: 320px;
       width: 100%;
-      top: -80px;
+      top: -75px;
       left: -10px;
 
       @media (min-width: @tablet-width) {
@@ -120,6 +102,7 @@
 }
 
 .order-form__item {
+  min-width: 280px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -127,13 +110,17 @@
   margin: 0;
   margin-bottom: 16px;
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+
   &--phone-area::after {
     content: "";
     position: absolute;
     box-sizing: border-box;
     width: 58px;
     height: 58px;
-    right: -15px;
+    right: 0;
     bottom: 0;
     background-color: #e6e6e6;
     background-image: url("../img/form/phone-icon.svg");
@@ -147,7 +134,7 @@
     box-sizing: border-box;
     width: 58px;
     height: 58px;
-    right: -15px;
+    right: 0;
     bottom: 0;
     background-color: #e6e6e6;
     background-image: url("../img/form/mail-icon.svg");
@@ -167,7 +154,6 @@
 
 .order-form__input {
   background-color: #f2f2f2;
-  min-width: 280px;
   min-height: 58px;
   border: none;
   padding: 0;
@@ -176,7 +162,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  padding-left: 16px;
 
   &::placeholder {
     color: #000000;
@@ -184,6 +169,7 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    padding-left: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -203,7 +189,6 @@
   line-height: 26px;
   font-weight: 400;
   position: relative;
-  padding-left: 16px;
 
   &::placeholder {
     color: rgba(0, 0, 0, 30%);
@@ -211,6 +196,7 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    padding-left: 16px;
   }
 
   @media (min-width: @tablet-width) {
@@ -241,6 +227,7 @@
 }
 
 .order-form__list-radio {
+  min-width: 280px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -259,12 +246,12 @@
 }
 
 .order-form__radio {
-  min-width: 280px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 62px;
-  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     margin-left: 75px;
@@ -304,13 +291,6 @@
   background-color: #d5d5d5;
 }
 
-// .order-form__radio-input:focus + .order-form__radio-label {
-//     box-shadow:
-//       0 0 0 0.1em #000000,
-//       0 0 0 0.2em #000000;
-// }
-
-
 .order-form__user-attractions {
   position: relative;
   padding-left: 20px;
@@ -323,7 +303,7 @@
     border-bottom: 1px solid #e5e5e5;
     min-width: 320px;
     width: 100%;
-    top: -35px;
+    top: -25px;
     left: -10px;
 
     @media (min-width: @tablet-width) {
@@ -337,7 +317,7 @@
     border-bottom: 1px solid #e5e5e5;
     min-width: 320px;
     width: 100%;
-    bottom: 35px;
+    bottom: 25px;
     left: -10px;
 
     @media (min-width: @tablet-width) {
@@ -378,21 +358,30 @@
   }
 }
 
-.order-form__checkbox {
+.order-form__item-checkbox {
+  display: flex;
+  flex-direction: column;
   min-width: 280px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   margin-bottom: 16px;
-  margin-left: 62px;
 
   @media (min-width: @tablet-width) {
     min-width: 224px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 172px;
+    margin-bottom: 0;
   }
+}
+
+.order-form__checkbox {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 62px;
 }
 
 .order-form__checkbox-input {
@@ -429,11 +418,23 @@
   flex-direction: column;
   border: none;
   margin: 0;
+  padding: 0;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 216px;
+    padding-left: 216px;
+  }
 }
 
 .order-form__text-area {
+  width: 280px;
   position: relative;
   border: none;
   outline: none;
@@ -442,11 +443,9 @@
   background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   margin: 0;
-  padding: 16px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  min-width: 279px;
   height: 150px;
   margin-bottom: 56px;
 
@@ -456,10 +455,16 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    padding: 16px;
+  }
+
+  @media (min-width: @mobile-width-only) {
+    width: 100%;
   }
 
   @media (min-width: @tablet-width) {
     min-width: 648px;
+    width: 100%;
     min-height: 160px;
     margin-bottom: 48px;
   }
