@@ -21,7 +21,7 @@
             </svg> -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper main-nav__wrapper--closed">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__left-list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
@@ -42,8 +42,12 @@
         </nav>
       </header>
       <main class="main-container">
-        <div class="main-container__background">
-          <img class="main-container__logo" src="img/index/sedona-logo-index.svg" width="282" height="214" alt="Приветственный текст">
+        <div class="main-container__index-background">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index/sedona-logo-index-desktop.svg" width="460" height="350">
+            <source media="(min-width: 768px)" srcset="img/index/sedona-logo-index-tablet.svg" width="461" height="350">
+            <img class="main-container__index-logo" src="img/index/sedona-logo-index-mobile.svg" width="282" height="214" alt="Приветственный текст">
+          </picture>
         </div>
         <section class="intro-index">
           <h1 class="intro-index__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
