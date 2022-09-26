@@ -106,9 +106,9 @@
   margin: 0;
   margin-bottom: 16px;
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
-  }
+  // @media (min-width: @desktop-width) {
+  //   margin-bottom: 0;
+  // }
 
   &--phone-area::after {
     content: "";
@@ -152,12 +152,23 @@
   background-color: #f2f2f2;
   min-height: 58px;
   border: none;
-  padding: 0;
+  outline: none;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
+  padding: 0;
+  padding-left: 16px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border: 4px solid hsl(0, 0%, 90%);
+  }
 
   &::placeholder {
     color: #000000;
@@ -165,7 +176,10 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    padding-left: 16px;
+
+    &:disabled {
+      color: rgba(0, 0, 0, 30%);
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -178,13 +192,15 @@
   background-color: #f2f2f2;
   min-height: 58px;
   border: none;
-  padding: 0;
+  outline: none;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   position: relative;
+  padding: 0;
+  padding-left: 16px;
 
   &::placeholder {
     color: rgba(0, 0, 0, 30%);
@@ -192,7 +208,6 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    padding-left: 16px;
   }
 
   @media (min-width: @tablet-width) {
@@ -271,6 +286,10 @@
   border-radius: 50%;
   margin-left: -62px;
   margin-top: -10px;
+
+  // &:active {
+
+  // }
 }
 
 .order-form__radio-input:checked + .order-form__radio-label {
@@ -286,13 +305,6 @@
 .order-form__radio-input:disabled + .order-form__radio-label {
   background-color: #d5d5d5;
 }
-
-// .order-form__radio-input:focus + .order-form__radio-label {
-//     box-shadow:
-//       0 0 0 0.1em #000000,
-//       0 0 0 0.2em #000000;
-// }
-
 
 .order-form__user-attractions {
   position: relative;
@@ -451,6 +463,7 @@
   font-weight: 400;
   height: 150px;
   margin-bottom: 56px;
+  padding: 16px;
 
   &::placeholder {
     color: rgba(0, 0, 0, 30%);
@@ -458,11 +471,6 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    padding: 16px;
-  }
-
-  @media (min-width: @mobile-width-only) {
-    width: 100%;
   }
 
   @media (min-width: @tablet-width) {

@@ -4,19 +4,18 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
-    // padding: 58px 60px 40px 60px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 201px;
     padding-right: 199px;
     padding-bottom: 84px;
-    // padding: 62px 201px 120px 199px;
   }
 }
 
@@ -54,6 +53,7 @@
   border: none;
   background-color: transparent;
   margin: 0;
+  padding: 0;
   margin-top: 38px;
   background-image: url("../img/catalog/video-mobile@1x.jpg");
   background-size: 100% auto;
@@ -68,10 +68,27 @@
 
 
   @media (min-width: @tablet-width) {
+    position: relative;
     background-image: url("../img/catalog/video-tablet@1x.jpg");
     background-size: 648px auto;
     min-width: 648px;
     min-height: 500px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/catalog/play-button.svg");
+      background-repeat: no-repeat;
+      top: 223px;
+      left: 300px;
+      width: 48px;
+      height: 54px;
+
+      @media (min-width: @desktop-width) {
+        top: 223px;
+        left: 375px;
+      }
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/video-tablet@2x.jpg");
