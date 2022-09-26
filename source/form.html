@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Форма отзыва</title>
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicons/favicon-32x32.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest.json">
   </head>
   <body class="page__body">
     <div class="container">
@@ -26,7 +30,7 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item site-list__item--indent-point">
+              <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Фото и видео</a>
               </li>
             </ul>
@@ -42,8 +46,12 @@
         </nav>
       </header>
       <main class="main-container">
-        <div class="main-container__background">
-          <img class="main-container__picture" src="img/catalog/sedona-logo-catalog.svg" width="229" height="39" alt="Седона">
+        <div class="main-container__form-background">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/sedona-logo-catalog-desktop.svg" width="460" height="80">
+            <source media="(min-width: 768px)" srcset="img/catalog/sedona-logo-catalog-tablet.svg" width="457" height="78">
+            <img class="intro-catalog__logo" src="img/catalog/sedona-logo-catalog-mobile.svg" width="229" height="39" alt="Седона">
+          </picture>
         </div>
         <section class="intro-form">
           <h1 class="intro-form__title">Оставьте свой отзыв</h1>
@@ -51,7 +59,7 @@
         </section>
         <form class="main-container__field-group order-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="order-form__user-info">
-            <fieldset class="order-form__group">
+            <fieldset class="order-form__group order-form__group--name">
               <legend class="order-form__title">Представьтесь:</legend>
                 <p class="order-form__item">
                   <label class="order-form__label" for="user-name">Имя*:</label>
@@ -66,13 +74,13 @@
                   <input class="order-form__input" type="text" name="user" id="user-patronymic" placeholder="Викторович">
                 </p>
             </fieldset>
-            <fieldset class="order-form__group">
+            <fieldset class="order-form__group order-form__group--phone">
               <legend class="order-form__title">Контактная информация:</legend>
-                <p class="order-form__item">
-                  <label class="order-form__label" for="telephone">Контактный телефон*:</label>
-                  <input class="order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
+                <p class="order-form__item order-form__item--phone-area">
+                  <label class="order-form__label order-form__label--phone-area" for="telephone">Контактный телефон*:</label>
+                  <input class="order-form__input-contacts order-form__input-contacts" type="tel" name="telephone" id="telephone" pattern="+7 [0-9] {3} [0-9] {3} [0-9] {2} [0-9] {2}" placeholder="Введите телефон" required>
                 </p>
-                <p class="order-form__item">
+                <p class="order-form__item order-form__item--mail-area">
                   <label class="order-form__label" for="user-email">Электронная почта*:</label>
                   <input class="order-form__input-contacts" type="text" name="user" id="user-email" placeholder="Введите e-mail" required>
                 </p>
@@ -85,19 +93,22 @@
                 <li class="order-form__item">
                   <label class="order-form__radio">
                     <input class="order-form__radio-input" type="radio" name="control-radio" value="1" checked>
-                    <span class="order-form__radio-label">Скорее положительное</span>
+                    <span class="order-form__radio-label"></span>
+                    Скорее положительное
                   </label>
                 </li>
                 <li class="order-form__item">
                   <label class="order-form__radio">
                     <input class="order-form__radio-input" type="radio" name="control-radio" value="2">
-                    <span class="order-form__radio-label">Скорее отрицательное</span>
+                    <span class="order-form__radio-label"></span>
+                    Скорее отрицательное
                   </label>
                 </li>
                 <li class="order-form__item">
                   <label class="order-form__radio">
                     <input class="order-form__radio-input" type="radio" name="control-radio" value="3">
-                    <span class="order-form__radio-label">Затрудняюсь ответить</span>
+                    <span class="order-form__radio-label"></span>
+                    Затрудняюсь ответить
                   </label>
                 </li>
               </ul>
@@ -105,30 +116,34 @@
           </div>
           <div class="order-form__user-attractions">
             <fieldset class="order-form__group">
-              <legend class="order-form__title">Посещенные достопримечательности:</legend>
+              <legend class="order-form__title">Посещенные<br> достопримечательности:</legend>
               <ul class="order-form__list-checkbox">
-                <li class="order-form__item">
+                <li class="order-form__item-checkbox">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1" checked>
-                    <span class="order-form__checkbox-label">Мост дьявола</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Мост дьявола
                   </label>
                 </li>
-                <li class="order-form__item">
+                <li class="order-form__item-checkbox">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="2" checked>
-                    <span class="order-form__checkbox-label">Гора-Колокол</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Гора-Колокол
                   </label>
                 </li>
-                <li class="order-form__item">
+                <li class="order-form__item-checkbox">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="3" checked>
-                    <span class="order-form__checkbox-label">Слайд-парк</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Слайд-парк
                   </label>
                 </li>
-                <li class="order-form__item">
+                <li class="order-form__item-checkbox">
                   <label class="order-form__checkbox">
                     <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="4">
-                    <span class="order-form__checkbox-label">Красные скалы</span>
+                    <span class="order-form__checkbox-label"></span>
+                    Красные скалы
                   </label>
                 </li>
               </ul>
